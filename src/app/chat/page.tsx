@@ -8,9 +8,7 @@ import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import { ChatMessageProps } from "@/types/types";
 
-const socket = io(
-  process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:5000",
-);
+const socket = io("https://typechatlite-server.onrender.com");
 
 export default function Page() {
   const [messages, setMessages] = useState<ChatMessageProps[]>([

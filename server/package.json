@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "server": "node --loader ts-node/esm src/index.ts"
+  }
+}

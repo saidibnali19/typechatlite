@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3000",
+    origin: ["https://typechatlite.vercel.app/"],
     methods: ["GET", "POST"],
   }),
 );
